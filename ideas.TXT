@@ -1,0 +1,13 @@
+Div contenant une liste des Event créés ( =>accés aux evenements enregistres pour l'utilisateur)
+	=> centrer la carte sur l'element sélectionné !
+	=> Modifier un evenement
+	=> Supprimer un evenement
+	=> tri des evenements par thème?
+
+Faire clignoter les marqueurs dont l'evenement est en cours
+
+Proposer un ittineraire ? 
+	Demander la position ?
+	Faire une requete a gmap? (xD)
+
+

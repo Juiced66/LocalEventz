@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/src/img/icone.png " type="image/png">
+    <title>LocalEventz ! N'oubliez plus jamais vos évenements favoris .</title>
+</head>
+<body>
+
+    <header>
+        <h1> 🎸 LocalEventz 🎭</h1>
+        <h2>N'oubliez plus jamais vos évenements favoris .</h2>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-10">
+                <div id="containerMap"> 
+                    <div id="map">
+    
+                    </div>
+    
+                    <div class ="hidden" id="mapWindow">
+                        
+                        <label for="mapLocalEventzTitle">Titre de l'événement</label>
+                        <input type="text" id="mapLocalEventzTitle">
+                        <label for="mapLocalEventzDescription">Description de l'événement</label>
+                        <textarea id="mapLocalEventzDescription" cols="25" rows="3"></textarea>
+                        <label for="mapMeeting-time">Date de l'événement </label>
+                        <input type="datetime-local" id="mapMeetingTime" value="" min="" max="">
+                        <label for="mapEndOfEvent">Date de fin de l'événement</label>
+                        <input type="datetime-local" id="mapEndOfEvent" value="" min="" max="">
+                        <label for="mapLocalEventzType">Type d'événement</label>
+    
+                        <select id="mapLocalEventzType">
+                            <option value="">--Selectionnez un type--</option>
+                            <option value="concert"> 🎶 Concert </option>
+                            <option value="birthday">🎁 Anniversaire</option>
+                            <option value="trip">🛫 Voyage</option>
+                            <option value="culture">🎨 Visite culturelle</option>
+                            <option value="projectX">💥 Projet X </option>
+                            <option value="other"> ❓ Autre </option>
+                        </select>
+    
+                        <h4>Coordonnées géographiques de l'événement </h4>
+    
+                        <label for="mapLocalEventzLat">Latitude</label>
+                        <input type="number"  id="mapLocalEventzLat">
+                        <label for="LocalEventzLng">Longitude</label>
+                        <input  type="number"  id="mapLocalEventzLng">
+                        <input type="button" class="btn btn-success" id="editSubmitBtn" value="Modifier événement">
+                        
+                </div>
+            </div>
+            </div>
+            <div class="col-2 center">
+                <div  id="containerForm">
+                
+                    <label for="LocalEventzTitle">Titre de l'événement</label>
+                    <input type="text"  id="LocalEventzTitle">
+                    <label for="LocalEventzDescription">Description de l'événement</label>
+                    <textarea id="LocalEventzDescription" cols="25" rows="3"></textarea>
+                    <label for="meeting-time">Date de l'événement </label>
+                    <input type="datetime-local" id="MeetingTime" value="" min="" max="">
+                    <label for="endOfEvent">Date de fin de l'événement </label>
+                    <input type="datetime-local" id="EndOfEvent" value="" min="" max="">
+                    <label for="LocalEventzType">Type d'événement</label>
+    
+                    <select id="LocalEventzType">
+                        <option value="">--Selectionnez un type--</option>
+                        <option value="concert"> 🎶 Concert </option>
+                        <option value="birthday">🎁 Anniversaire</option>
+                        <option value="trip">🛫 Voyage</option>
+                        <option value="culture">🎨 Visite culturelle</option>
+                        <option value="projectX">💥 Projet X </option>
+                        <option value="other"> ❓ Autre </option>
+                    </select>
+                    
+                    
+                    
+                    <label for="LocalEventzLat">Latitude</label>
+                    <input title ="Vous pouvez Cliquer sur la carte pour completer ce champs" type="number"  id="LocalEventzLat">
+                    <label for="LocalEventzLng">Longitude</label>
+                    <input title ="Vous pouvez Cliquer sur la carte pour completer ce champs" type="number"  id="LocalEventzLng">
+                    
+                    <input type="button" class="btn btn-success" id="submitBtn"value="Créer l'évenement">
+                </div>
+
+                
+                
+            </div>
+        </div>
+        <div id="controls" > 
+            
+            <input type="button" class="btn btn-success" id="editBtn" value="Edition d'événements"> <!-- TODO : Fonction de suppresion d'evenement-->
+            <input type="button" class="btn btn-success" id="refreshBtn"value="Rafraîchir la carte"> <!-- consigne du tp (le render de l'app le rend inutile) -->
+            <input type="button" class="btn btn-success" id="centerBtn"value="Vue par defaut"> 
+            <input type="button" class="btn btn-success" id="centerMapOnBtn" value="Recentrer"> 
+            <!-- TODO : Mettre les boutons dans la map -->
+        </div> 
+    </main>
+        <script src="main.js"></script>
+</body>
+</html>

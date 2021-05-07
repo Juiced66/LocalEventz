@@ -1,0 +1,87 @@
+
+body{
+
+    background : url(./img/concert.jpg) center fixed no-repeat, linear-gradient(90deg, rgba(4,0,71,0.8) 0%, rgba(156,37,0,0.8) 100%);
+    background-size: 100%,100%;
+    background-clip: border-box;
+    color: azure;
+    font-family: Oswald;
+    font-weight: 400;
+    
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Zen Dots';
+    font-weight: 400;
+    font-size: 3em;
+    
+}
+h2{
+    font-family: 'Zen Dots';
+    font-weight: 400;
+    font-size: 1.2em;
+    font-style: italic; 
+}
+
+#map{
+    
+    width: 100%;
+    height: 75vh;
+    top: 0;
+   
+}
+#controls{
+    transform: scale(0.8);
+    position: absolute;
+    top : 78vh;
+    left : 39vw;
+}
+#containerForm{
+    transform: translateY(10%), scale(0.8);
+}
+#containerMap{
+    position: relative;
+}
+#mapWindow{
+    height: 100%;
+    width :45%;
+    background:  rgba(3, 2, 15, 0.363);
+    position: absolute;
+    top: 0;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.popUp{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    min-height:150px;
+    color: #fefefe;
+    border-radius: 5px;
+    background-color: rgba(4,0,71,1);
+    position: relative;
+    
+}
+
+.btn{
+    margin: 10px;
+}
+.error {
+    background-color: rgba( 255, 0, 0, .4);
+    border: 2px solid red;
+}
+.hidden{
+    display:none !important
+}
+
